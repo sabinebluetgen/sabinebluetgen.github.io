@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sabine Blütgen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:19px;}
+.content_text {line-height: 1.8;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-bar-item { color: white; }
+.w3-padding-64 { color: white; } /* Sidebar font color */
+.w3-main {
+    padding-top: 0; /* Remove padding above content */
+    margin-left: 300px; /* Account for sidebar width */
+    padding-right: 40px;
+}
+.banner-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 300px); /* Make image width 100% minus sidebar width */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+.banner-container img {
+    width: 100%; /* Fill the available space */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Avoid stretching */
+    display: block; /* Ensure it acts like a block element without gaps */
+}
+.gg-mail,
+.gg-mail::after {
+  display: block;
+  box-sizing: border-box;
+  height: 14px;
+  border: 2px solid;
+}
+.gg-mail {
+  overflow: hidden;
+  transform: scale(var(--ggs, 1));
+  position: relative;
+  width: 18px;
+  border-radius: 2px;
+}
+.gg-mail::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 14px;
+  transform: rotate(-45deg);
+  bottom: 3px;
+  left: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color: #5F8575; z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Sabine Blütgen</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="cv.pdf" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CV</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: #5F8575;">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" style="background-color: #5F8575;" onclick="w3_open()">☰</a>
+  <span>Sabine Blütgen</span>
+  <!-- Image for small screens -->
+  <img src="edi.jpg" alt="Header Image" style="width: 100%; height: auto; margin-top: 20px;">
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Banner image -->
+  <div class="banner-container">
+    <img src="edi.jpg" alt="Header Image" style="margin-bottom: 20px;">
+  </div>
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:20px" id="home">
+    <h1 class="w3-jumbo"><b>Sabine Blütgen (she/her)</b></h1>
+    <hr style="width:50px;border:5px solid #5F8575" class="w3-round">
+    <p class="content_text"> I am a PhD student at the University of Edinburgh's <a href="https://cle.ppls.ed.ac.uk">Centre for Language Evolution</a> under the supervision of <a href="https://www.simonkirby.net">Prof&nbsp;Simon Kirby</a> and <a href="http://jennifer-culbertson.github.io">Prof&nbsp;Jennifer Culbertson</a>. <br><br><br>
+    </p>
+  </div>
+
+  <!-- Research -->
+  <div class="w3-container" id="research" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text"><b>Research</b></h1>
+    <hr style="width:50px;border:5px solid #5F8575" class="w3-round">
+    <p class="content_text">My research focuses on the question of why humans are so strongly inclined to share their thoughts and feelings with others (also called <i>Mitteilungsbedürfnis</i>), and how this inclination might have shaped, or even driven, the evolution of language.<br> <br>
+      I am also interested in how our <i>Mitteilungsbedürfnis</i> might be linked to our ability to collaborate with others, both in human evolution and ontogeny.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid #5F8575" class="w3-round">
+    <p class="content_text">
+      <span class="gg-mail" style="display: inline-block; vertical-align: middle;"></span><a>&nbsp &nbsp</a><a href="mailto:s.bluetgen@sms.ed.ac.uk">s.bluetgen@sms.ed.ac.uk</a>
+    </p>
+   </a>
+  
+  </div>
+
+
+     
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
