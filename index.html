@@ -80,6 +80,14 @@ input[type="button"]:hover {
   background-color: #4b6a5d; /* slightly darker green on hover */
 }
 
+.butterfly {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
 </style>
 </head>
 <body>
@@ -145,14 +153,20 @@ input[type="button"]:hover {
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text"><b>Contact</b></h1>
-    <hr style="width:50px;border:5px solid #5F8575" class="w3-round">
-    <p class="content_text">
-      <span class="gg-mail" style="display: inline-block; vertical-align: middle;"></span><a>&nbsp &nbsp</a><a>s.bluetgen@sms.ed.ac.uk</a>
-    </p>
-   </a>
-  
-  </div>
+  <h1 class="w3-xxxlarge w3-text"><b>Contact</b></h1>
+  <hr style="width:50px;border:5px solid #5F8575" class="w3-round">
+  <p class="content_text">
+    <!-- Email -->
+    <span class="gg-mail" style="display: inline-block; vertical-align: middle;"></span>
+    <a>&nbsp;&nbsp;</a>
+    <a href="mailto:s.bluetgen@sms.ed.ac.uk">s.bluetgen@sms.ed.ac.uk</a>
+    <br><br>
+
+    <!-- Bluesky -->
+    <span class="butterfly">🦋</span>
+    <a href="https://bsky.app/profile/sabinebluetgen.bsky.social" target="_blank">@sabinebluetgen.bsky.social</a>
+  </p>
+</div>
 
 <!-- End page content -->
 </div>
@@ -183,6 +197,7 @@ function onClick(element) {
 
 </body>
 </html>
+
 
 
 
