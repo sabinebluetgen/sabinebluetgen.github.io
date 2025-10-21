@@ -15,9 +15,12 @@ body {font-size:19px;}
 .w3-bar-item { color: white; }
 .w3-padding-64 { color: white; } /* Sidebar font color */
 .w3-main {
-    padding-top: 0; /* Remove padding above content */
-    margin-left: 300px; /* Account for sidebar width */
+    padding-top: 0;
+    margin-left: 300px; /* sidebar space */
     padding-right: 40px;
+    max-width: 900px;    /* limits how wide text areas can get */
+    margin-right: auto;
+    margin-left: 300px;  /* keep sidebar offset */
 }
 .banner-container {
     position: relative;
@@ -206,6 +209,7 @@ function onClick(element) {
 
 </body>
 </html>
+
 
 
 
